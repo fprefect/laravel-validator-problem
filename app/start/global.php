@@ -80,4 +80,9 @@ App::down(function()
 |
 */
 
+\Validator::resolver(function($translator, $data, $rules, $messages) 
+{ 
+    return new MyValidator($translator, $data, $rules, $messages); 
+}); 
+
 require app_path().'/filters.php';
