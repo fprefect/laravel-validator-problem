@@ -1,6 +1,6 @@
-## 'validator' service gets overwritten when calling \Artisan::call('migrate') in test
+### Injected 'validator' service gets overwritten when calling \Artisan::call('migrate') in test setUp
 
-To reproduce, clone this repo and do phpunit. The output will be
+To reproduce, clone this repo and run `phpunit`. The output will be
 
     factory: did not work correctly
     facade: worked correctly
